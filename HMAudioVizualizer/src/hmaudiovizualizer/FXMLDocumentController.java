@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Ellipse;
 
 /**
  *
@@ -19,6 +20,7 @@ import javafx.scene.shape.Circle;
  */
 public class FXMLDocumentController implements Initializable {
     private double radius;
+    private double center;
     private double cir;
     private double eWidth;
     private final double numBars = 360;
@@ -37,9 +39,11 @@ public class FXMLDocumentController implements Initializable {
         radius = circle.getRadius();
         cir = 2 * Math.PI * radius;
         eWidth = cir/numBars;
-        numBarsInQuad = radius/(numBars/4);
-        for (int i = 0; i < numBars/2; i++) {
-            circle.getCenterX();
+        numBarsInQuad = numBars/4;
+        center = circle.getCenterX();
+        for (int i = 0; i < numBarsInQuad; i++) {
+            Ellipse ellipse = new Ellipse();
+            
         }
         
     }    
