@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500" prefWidth="1000" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hmaudiovizualizer.FXMLDocumentController">
+    <children>
+      <VBox prefHeight="500" prefWidth="1000">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Volume">
+                  <items>
+                        <MenuItem mnemonicParsing="false">
+                           <graphic>
+                              <Slider orientation="VERTICAL" />
+                           </graphic>
+                        </MenuItem>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <StackPane prefHeight="500" prefWidth="1000">
+               <children>
+                  <GridPane maxHeight="1.7976931348623157E308" prefHeight="467.0" prefWidth="836.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="494.0" minWidth="10.0" prefWidth="247.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="768.0" minWidth="10.0" prefWidth="516.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="768.0" minWidth="10.0" prefWidth="247.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="148.0" minHeight="2.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="396.0" minHeight="10.0" prefHeight="308.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="81.0" minHeight="6.0" prefHeight="81.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Circle fill="DODGERBLUE" radius="120.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Button mnemonicParsing="false" text="Button" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
