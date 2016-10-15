@@ -16,7 +16,7 @@
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
+                    <MenuItem mnemonicParsing="false" text="open" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Volume">
@@ -51,7 +51,7 @@
                      <children>
                         <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
-                              <Circle fill="DODGERBLUE" radius="120.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Circle fx:id="circle" fill="DODGERBLUE" radius="120.0" stroke="BLACK" strokeType="INSIDE" />
                               <Button mnemonicParsing="false" text="Button" />
                            </children>
                         </StackPane>
