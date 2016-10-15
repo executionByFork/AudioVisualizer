@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.effect.*?>
 <?import java.lang.*?>
@@ -52,9 +55,27 @@
                         <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
                               <Circle fx:id="circle" fill="DODGERBLUE" radius="120.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Button mnemonicParsing="false" text="Button" />
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Play-Symbol.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </StackPane>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Button mnemonicParsing="false" text="Restart" textFill="#3700ff">
+                                 <HBox.margin>
+                                    <Insets left="130.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Reset" textFill="#ff0606">
+                                 <HBox.margin>
+                                    <Insets left="150.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
                      </children>
                   </GridPane>
                </children>
