@@ -11,24 +11,37 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.shape.Circle;
 
 /**
  *
  * @author main
  */
 public class FXMLDocumentController implements Initializable {
-    
-    @FXML
-    private Label label;
+    private double radius;
+    private double cir;
+    private double eWidth;
+    private final double numBars = 360;
+    private double numBarsInQuad;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
     }
     
+    @FXML
+    private Circle circle;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        radius = circle.getRadius();
+        cir = 2 * Math.PI * radius;
+        eWidth = cir/numBars;
+        numBarsInQuad = radius/(numBars/4);
+        for (int i = 0; i < numBars/2; i++) {
+            circle.getCenterX();
+        }
+        
     }    
     
 }
